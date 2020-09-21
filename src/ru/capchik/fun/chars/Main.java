@@ -1,7 +1,5 @@
-package ru.capchik.ikbo_13_19.lesson3.Chars;
+package ru.capchik.fun.chars;
 
-import java.io.Console;
-import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
