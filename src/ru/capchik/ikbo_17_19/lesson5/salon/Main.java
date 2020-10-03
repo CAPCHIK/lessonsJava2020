@@ -1,9 +1,19 @@
 package ru.capchik.ikbo_17_19.lesson5.salon;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+
+
+        LocalDateTime date = LocalDateTime.of(1998, 05, 28, 23, 45);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-mm-yyyy");
+        System.out.println(formatter.format(date));
+        long l = 79161853166L;
+
         Salon salon = new Salon();
         Random random = new Random(123);
         for (int i = 0; i < 500; i++) {
