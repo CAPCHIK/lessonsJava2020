@@ -1,4 +1,4 @@
-package ru.capchik.ivbo_07_19.lesson4;
+package ru.capchik.ivbo_07_19.lesson3;
 
 public class MovablePoint implements Movable {
     private double x, y;

@@ -1,4 +1,4 @@
-package ru.capchik.ivbo_07_19.lesson4;
+package ru.capchik.ivbo_07_19.lesson3;
 
 public class Dog extends Animal {
     public Dog(int age, String name) {

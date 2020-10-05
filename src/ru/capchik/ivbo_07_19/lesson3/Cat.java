@@ -1,4 +1,4 @@
-package ru.capchik.ivbo_07_19.lesson4;
+package ru.capchik.ivbo_07_19.lesson3;
 
 public class Cat extends Animal {
     public Cat(int age, String name) {
