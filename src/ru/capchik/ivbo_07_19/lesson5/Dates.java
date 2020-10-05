@@ -14,6 +14,10 @@ public class Dates {
                 7,
                 56
         );
+        System.out.println(ld);
+        LocalDate another = ld.plusDays(1);
+        System.out.println(ld);
+        System.out.println(another);
         DateTimeFormatter f = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         System.out.println(f.format(ldt));
