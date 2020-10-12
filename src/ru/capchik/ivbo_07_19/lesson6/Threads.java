@@ -18,6 +18,8 @@ public class Threads {
         }
 
         for (Thread t : threads) {
+
+            System.out.println(t.getState());
             t.join();
         }
         long endTime = System.currentTimeMillis();
