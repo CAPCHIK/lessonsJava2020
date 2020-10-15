@@ -1,4 +1,4 @@
-package ru.capchik.ivbo_11_19.lesson7;
+package ru.capchik.ivbo_11_19.lesson7.enums;
 
 public enum ActionEnum {
     ACTION_ONE("Action 1"),

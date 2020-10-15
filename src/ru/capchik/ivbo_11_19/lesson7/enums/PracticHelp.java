@@ -1,4 +1,4 @@
-package ru.capchik.ivbo_11_19.lesson7;
+package ru.capchik.ivbo_11_19.lesson7.enums;
 
 public class PracticHelp {
     public static final String ANSI_RESET = "\u001B[0m";

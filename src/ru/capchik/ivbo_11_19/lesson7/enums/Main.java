@@ -1,6 +1,4 @@
-package ru.capchik.ivbo_11_19.lesson7;
-
-import ru.capchik.ivbo_07_19.lesson5.swing.ActionConstants;
+package ru.capchik.ivbo_11_19.lesson7.enums;
 
 public class Main {
     public static void main(String[] args) {
