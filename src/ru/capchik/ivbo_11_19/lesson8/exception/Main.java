@@ -3,7 +3,7 @@ package ru.capchik.ivbo_11_19.lesson8.exception;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidMileageException {
 //        int a = 65 / 0;
         Car car = new Car();
 
@@ -20,8 +20,10 @@ public class Main {
         } catch (InvalidMileageException e) {
             System.out.println("Incorrect mileage");
             System.out.println(e.getMessage());
+            throw e;
+        } finally {
+            System.out.println(car);
         }
-        System.out.println(car);
     }
 
 }
