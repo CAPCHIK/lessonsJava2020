@@ -17,6 +17,7 @@ public class Main {
         File file = new File(mainFile);
         if (file.isDirectory()) {
             String[] list = file.list();
+
             for (String s : list) {
                 System.out.println(Paths.get(basePath, s).toAbsolutePath());
             }
