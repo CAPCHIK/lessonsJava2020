@@ -7,7 +7,9 @@ import java.net.InetAddress;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        sendMessage("Hello from vsdrvsr vsr ", "127.0.0.1", 10101);
+        sendMessage("Hello from localhost", "127.0.0.1", 10101);
+        sendMessage("Hello Java", "10.125.160.46", 10101);
+        sendMessage("Hello to all", "255.255.255.255", 10101);
     }
 
     private static void sendMessage(String message, String address, int port)
