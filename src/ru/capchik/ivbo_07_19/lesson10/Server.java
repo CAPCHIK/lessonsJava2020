@@ -15,8 +15,11 @@ public class Server {
                 0,
                 buffer.length);
         System.out.println("listening on 9087");
+        int messageNum = 0;
         while (true) {
             socket.receive(packet);
+            messageNum++;
+            System.out.println("message: " + messageNum);
             System.out.println(packet.getAddress());
             System.out.println(packet.getPort());
             String message = new String(buffer, 0, packet.getLength());
