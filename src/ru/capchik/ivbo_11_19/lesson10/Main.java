@@ -12,7 +12,7 @@ public class Main {
                 .getParent();
         System.out.println(path);
         String basePath = "src/ru/capchik/ivbo_11_19/lesson10";
-        String mainFile = basePath + "/Main.java";
+        String mainFile = basePath + "/oscar_age.csv";
         String copyFile = basePath + "/copy.txt";
         File file = new File(mainFile);
         if (file.isDirectory()) {
