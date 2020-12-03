@@ -1,6 +1,7 @@
 package ru.capchik.ivbo_07_19.lesson13;
 
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class CustomCollection implements Iterable<Integer> {
     private int[] values = new int[]{19, -20, 3, 4, 5};
