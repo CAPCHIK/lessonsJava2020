@@ -18,6 +18,8 @@ public class Item {
     }
 
     public void setId(int id) {
+
+        System.out.println("Change id");
         this.id = id;
     }
 
@@ -26,6 +28,7 @@ public class Item {
     }
 
     public void setData(String data) {
+        System.out.println("Change data");
         this.data = data;
     }
 
@@ -34,6 +37,7 @@ public class Item {
     }
 
     public void setGood(boolean good) {
+        System.out.println("Change good");
         isGood = good;
     }
 
@@ -42,6 +46,17 @@ public class Item {
     }
 
     public void setDescription(String description) {
+        System.out.println("Change description");
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", data='" + data + '\'' +
+                ", isGood=" + isGood +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
