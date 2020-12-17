@@ -26,7 +26,6 @@ public class ReflectionExample {
             ConsoleOperation operation = declredMethods.get(i).getAnnotation(ConsoleOperation.class);
             System.out.println(operation.key()+ " for "+ operation.title());
         }
-
 int operation = scanner.nextInt();
         declredMethods.get(operation).invoke(worker);
         //workWithClassAnnotation();
