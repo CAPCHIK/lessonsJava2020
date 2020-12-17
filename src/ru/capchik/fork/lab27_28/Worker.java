@@ -1,5 +1,4 @@
 package ru.capchik.fork.lab27_28;
-
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -9,7 +8,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
-
+// why i am here
 public class Worker {
     private final static String path = "http://gitlessons2020.rtuitlab.ru:3000/reflectionTasks";
     private static final HttpClient client = HttpClient.newHttpClient();
