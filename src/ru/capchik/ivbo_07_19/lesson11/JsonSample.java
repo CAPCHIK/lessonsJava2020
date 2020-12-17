@@ -15,18 +15,20 @@ public class JsonSample {
         Item item = new Item(1, "asd", false, "SOME LONG TEXT");
         System.out.println(gson.toJson(item));
 
-        Item fromJson = gson.fromJson("{\"name\":\"Name item\",\"price\":-43545,\"count\":34,\"description\":\"SOME LONG TEXT\"}", Item.class);
+        Item fromJson = gson.fromJson("{\"name\":\"Name item\",\"price\":-43545,\"id\":34,\"description\":\"SOME LONG TEXT\"}", Item.class);
         System.out.println(fromJson);
+        fromJson.setId(545);
+       // addItem(new Item(0, "asdd3d21", true, "DESCR FROM JAVA"));
 
-        addItem(new Item(0, "asdd3d21", true, "DESCR FROM JAVA"));
+//        HttpRequest request = HttpRequest.newBuilder()
+//                .GET()
+//                .uri(URI.create("http://80.87.199.76:3000/objects"))
+//                .build();
+//
+//        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+//        System.out.println(response.body());
 
-        HttpRequest request = HttpRequest.newBuilder()
-                .GET()
-                .uri(URI.create("http://80.87.199.76:3000/objects"))
-                .build();
 
-        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(response.body());
     }
     private static void addItem(Item item) throws IOException, InterruptedException {
         String body = gson.toJson(item);
